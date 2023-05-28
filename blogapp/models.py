@@ -10,3 +10,6 @@ class Categoria(models.Model):
 
 
 class Tag(model.Model):
+    pass
+
+    
