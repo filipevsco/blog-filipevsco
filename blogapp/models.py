@@ -15,3 +15,4 @@ class Post(models.Model):
     # image = StdImageField(upload_to='static/img/', variations={'thumbnail': {"width": 300, "height": 400, "crop": True}}, blank=True, null=True)
     #tag
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
+    # test
