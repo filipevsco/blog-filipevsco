@@ -18,3 +18,8 @@ class Post(models.Model):
     #tag
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
     # test
+    
+    def __str__(str):
+        return self.titulo
+        
+        
