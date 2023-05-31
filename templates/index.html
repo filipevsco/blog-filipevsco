@@ -18,7 +18,7 @@
                     <!-- Post preview-->
                     <div class="post-preview">
                         <a href="post.html">
-                            <h2 class="post-title">{{ post.titulo }}</h2>
+                            <h2 class="post-title"><a href="{% url 'blogapp:post' post.pk %}">{{ post.titulo }}</a></h2>
                             <h3 class="post-subtitle">{{ post.subtitulo }}</h3>
                         </a>
                         <p class="post-meta">
@@ -32,20 +32,6 @@
                     <!-- Divider-->
                     <hr class="my-4" />
 
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Failure is not an option</h2>
-                            <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">Start Bootstrap</a>
-                            on July 8, 2023
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
                     <!-- Pager-->
                     <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
                 </div>
