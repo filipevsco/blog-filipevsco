@@ -9,8 +9,8 @@ class Categoria(models.Model):
         return self.nome
 
 class Post(models.Model):
-    titulo = models.CharField(max_length=30, unique=True)
-    subtitulo = models.CharField(max_length=40)
+    titulo = models.CharField(max_length=100, unique=True)
+    subtitulo = models.CharField(max_length=100)
     texto = models.TextField()
     autor = models.ForeignKey(User, on_delete=models.CASCADE)
     data = models.DateTimeField(auto_now_add=True)
@@ -19,7 +19,7 @@ class Post(models.Model):
     categoria = models.ForeignKey(Categoria, on_delete=models.CASCADE)
     # test
     
-    def __str__(str):
+    def __str__(self):
         return self.titulo
         
         
